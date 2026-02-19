@@ -5,6 +5,8 @@
     "esphome/components/daikin_sniffer/daikin_sniffer.h",
     "esphome/components/daikin_sniffer/daikin_sniffer.cpp",
     "esphome/components/daikin_sniffer/component.py",
+    "esphome/components/__init__.py",
+    "esphome/__init__.py",
     "esphome/components/daikin_sniffer/__init__.py"
   ]
 }
