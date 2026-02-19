@@ -8,15 +8,13 @@ namespace daikin_sniffer {
 
 class DaikinSniffer : public esphome::Component, public esphome::uart::UARTDevice {
  public:
-  esphome::text_sensor::TextSensor *sensor;
-
-  explicit DaikinSniffer(esphome::uart::UARTComponent *parent);
+  DaikinSniffer(esphome::uart::UARTComponent *parent);
 
   void setup() override;
   void loop() override;
 
- private:
-  std::vector<uint8_t> buffer;
+ protected:
+  esphome::text_sensor::TextSensor *raw_frame_sensor_;
 };
 
 }  // namespace daikin_sniffer
