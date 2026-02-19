@@ -1,7 +1,13 @@
 #include "daikin_sniffer.h"
 
 DaikinSniffer::DaikinSniffer(esphome::uart::UARTComponent *parent)
-    : esphome::uart::UARTDevice(parent) {}
+    : esphome::uart::UARTDevice(parent) {
+  sensor = new esphome::text_sensor::TextSensor();
+}
+
+void DaikinSniffer::setup() {
+  sensor->set_name("Daikin Raw Frame");
+}
 
 void DaikinSniffer::loop() {
   while (available()) {
@@ -24,4 +30,3 @@ void DaikinSniffer::loop() {
     if (buffer.size() > 200) buffer.clear();
   }
 }
-
