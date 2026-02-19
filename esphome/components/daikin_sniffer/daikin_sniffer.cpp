@@ -7,8 +7,7 @@ static const char *TAG = "daikin_sniffer";
 
 DaikinSniffer::DaikinSniffer(esphome::uart::UARTComponent *parent)
     : esphome::uart::UARTDevice(parent) {
-  raw_frame_sensor_ = new esphome::text_sensor::TextSensor();
-  raw_frame_sensor_->set_name("Daikin Raw Frame");
+  // optional: initialisierung
 }
 
 void DaikinSniffer::setup() {
