@@ -2,9 +2,9 @@
   "name": "daikin_sniffer",
   "version": "1.0.0",
   "files": [
-    "components/daikin_sniffer/daikin_sniffer.h",
-    "components/daikin_sniffer/daikin_sniffer.cpp",
-    "components/daikin_sniffer/component.py",
-    "components/daikin_sniffer/__init__.py"
+    "esphome/components/daikin_sniffer/daikin_sniffer.h",
+    "esphome/components/daikin_sniffer/daikin_sniffer.cpp",
+    "esphome/components/daikin_sniffer/component.py",
+    "esphome/components/daikin_sniffer/__init__.py"
   ]
 }
