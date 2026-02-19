@@ -1,9 +1,10 @@
 {
-  "name": "daikin-sniffer",
+  "name": "daikin_sniffer",
   "version": "1.0.0",
-  "build": {
-    "include": [
-      "components"
-    ]
-  }
+  "files": [
+    "components/daikin_sniffer/daikin_sniffer.h",
+    "components/daikin_sniffer/daikin_sniffer.cpp",
+    "components/daikin_sniffer/component.py",
+    "components/daikin_sniffer/__init__.py"
+  ]
 }
