@@ -3,15 +3,15 @@
 
 namespace daikin_sniffer {
 
-static const char *TAG = "daikin";
+static const char *TAG = "daikin_sniffer";
 
 DaikinSniffer::DaikinSniffer(esphome::uart::UARTComponent *parent)
     : esphome::uart::UARTDevice(parent) {
-  sensor = new esphome::text_sensor::TextSensor();
+  raw_frame_sensor_ = new esphome::text_sensor::TextSensor();
+  raw_frame_sensor_->set_name("Daikin Raw Frame");
 }
 
 void DaikinSniffer::setup() {
-  sensor->set_name("Daikin Raw Frame");
   ESP_LOGI(TAG, "Daikin sniffer initialized");
 }
 
